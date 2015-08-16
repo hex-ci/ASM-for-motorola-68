@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="MyASM.exe"/>
+    <OBJFILES value="MyASM.obj mdiframe.obj MDIEdit.obj AsmThread.obj HashTable.obj 
+      AsmAnalyze.obj AsmStatus.obj About.obj GotoLine.obj Syn68AsmSyn.obj 
+      SearchForm.obj ReplaceForm.obj ConfirmReplaceForm.obj"/>
+    <RESFILES value="MyASM.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) mdiframe.dfm MDIEdit.dfm AsmStatus.dfm About.dfm GotoLine.dfm 
+      SearchForm.dfm ReplaceForm.dfm ConfirmReplaceForm.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclusr.lib vcldb.lib dbrtl.lib vclx.lib SynEdit_BCB6.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib SynEdit_BCB6.lib vclx.lib dbrtl.lib vcldb.lib dclusr.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="MyASM.cpp"/>
+    <INCLUDEPATH value="&quot;e:\program files\borland\xpmenu&quot;;&quot;E:\Program Files\Borland\SynEdit\Source&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;e:\program files\borland\xpmenu&quot;;&quot;E:\Program Files\Borland\SynEdit\Source&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;e:\program files\borland\xpmenu&quot; 
+      -I&quot;E:\Program Files\Borland\SynEdit\Source&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -pr -a8 -6 -b- -k- -vi -c -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$C- -$A8 -v -JPHNV -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w0 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MyASM.cpp" FORMNAME="" UNITNAME="MyASM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="readme.txt" FORMNAME="" UNITNAME="readme" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mdiframe.cpp" FORMNAME="FrameForm" UNITNAME="MDIFrame" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MyASM.res" FORMNAME="" UNITNAME="MyASM" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDIEdit.cpp" FORMNAME="EditForm" UNITNAME="MDIEdit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AsmThread.cpp" FORMNAME="" UNITNAME="AsmThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HashTable.cpp" FORMNAME="" UNITNAME="HashTable" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AsmAnalyze.cpp" FORMNAME="" UNITNAME="AsmAnalyze" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AsmStatus.cpp" FORMNAME="AsmForm" UNITNAME="AsmStatus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="AboutBox" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GotoLine.cpp" FORMNAME="GotoForm" UNITNAME="GotoLine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Syn68AsmSyn.pas" FORMNAME="" UNITNAME="Syn68AsmSyn" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SearchForm.cpp" FORMNAME="FormSearch" UNITNAME="SearchForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReplaceForm.cpp" FORMNAME="FormReplace" UNITNAME="ReplaceForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConfirmReplaceForm.cpp" FORMNAME="FormConfirmReplace" UNITNAME="ConfirmReplaceForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=0
+Build=42
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=Happy Family
+FileDescription=68 系列汇编系统
+FileVersion=2.0.0.42
+InternalName=MyASM
+LegalCopyright=版权所有(C) 2003-2005 赵畅
+LegalTrademarks=
+OriginalFilename=MyASM.EXE
+ProductName=68 系列汇编系统
+ProductVersion=2.0.0.0
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=e:\program files\borland\xpmenu;E:\Program Files\Borland\SynEdit\Source;$(BCB)\include;$(BCB)\include\vcl
+Item1=E:\Program Files\Borland\SynEdit\Source;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\..\SynEdit\Source;..\..\..\xpmenu;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\..\xpmenu;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=e:\program files\borland\xpmenu;E:\Program Files\Borland\SynEdit\Source;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=E:\Program Files\Borland\SynEdit\Source;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\..\SynEdit\Source;$(BCB)\Projects\Lib;..\..\..\xpmenu;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\Projects\Lib;..\..\..\xpmenu;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\lib\obj;$(BCB)\lib
+Item5=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_DEBUG
+Item1=SYN_CPPB_1
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
